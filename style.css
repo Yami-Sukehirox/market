@@ -292,3 +292,8 @@ section:first-child p {
     font-size: 16px;
     margin-bottom: 25px;
 }
+
+.search-box label {
+    font-weight: bold;
+    color: #333;
+}
