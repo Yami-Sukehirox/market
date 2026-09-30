@@ -1,299 +1,312 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 header {
-    padding: 20px;
-    background-color: #222;
-    color: white;
+  padding: 20px;
+  background-color: #222;
+  color: white;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
-nav a:hover{
-    color: #00aaff;
+nav a:hover {
+  color: #66c0ed;
 }
 
 main {
-    padding: 30px;
+  padding: 30px;
 }
 
 h1 {
-    font-size: 40px;
-    margin-bottom: 8px;
-    color: #111827;
+  font-size: 40px;
+  margin-bottom: 8px;
+  color: #f1f2f4;
+  text-align: left;
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
 }
 
 .product-grid article {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .product-grid article img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-}
-
-.product-grid article h3{
-    margin-top: 15px;
-    font-size: 20px;
-}
-
-.product-grid article p {
-    margin: 8px 0;
-}
-
-.product-grid article p:nth-of-type(2) {
-    color: #007bff;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 12px 0;
-}
-
-.product-grid article button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.product-grid article button:hover {
-    background-color: #0056b3;
-}
-
-.product-grid article p {
-    line-height: 1.5;
-}
-
-aside {
-    padding: 15px;
-    margin: 20px 0;
-}
-
-aside ul {
-    list-style: none;
-    padding: 0;
-}
-
-aside li {
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-aside li {
-    background-color: #e9ecef;
-    color: #007bff;
-}
-
-aside li:hover {
-    color:#007bff;
-    cursor: pointer;
-}
-
-#search {
-    padding: 12px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-#search + button {
-    padding: 10px 18px;
-    border: none;
-    border-radius: 6px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-}
-
-form {
-    margin: 20px 0;
-}
-
-footer {
-    margin-top: 40px;
-    padding: 30px;
-    background-color: #222;
-    color: white;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-}
-
-footer a:hover {
-    color: #00aaff;
-}
-
-footer h2, footer h3 {
-    margin-bottom: 10px;
-}
-
-main > nav {
-    margin: 30px 0;
-    text-align: center;
-}
-
-main > nav a {
-    margin: 0 5px;
-    padding: 8px 12px;
-    text-decoration: none;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-main > nav a:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-.product-grid article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0 , 0.15);
-}
-
-.product-grid article {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: white;
-    transition: transform 0.2s;
-    box-shadow: 0 2px 8px rgba(0, 0, 0 , 0.1);
-}
-
-@media (max-width: 768px) {
-    .product-grid {
-grid-template-columns: repeat(2, 1fr);        
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-flex-direction: column;
-gap: 15px;
-    }
-}
-
-header {
-    padding: 20px 40px;
-    background-color: #111827;
-    color: white;
-}
-
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 0;
-}
-
-header nav {
-    display: flex;
-    gap: 25px;
-}
-
-header nav a {
-    transition: color 0.2s;
-}
-
-header nav a.active {
-    color: #00aaff;
-    font-weight: bold;
-    border-bottom: 2px solid #00aaff;
-    padding-bottom: 5px;
-}
-
-.search-box {
-    display: flex;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-
-}
-
-.search-box form {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.search-box input {
-    flex: 1;
-}
-
-aside {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f8f9fa;
-    padding: 20px;
-}
-
-aside h2 {
-    margin-top: 0;
-    font-size: 22px;
-}
-
-section {
-    font-size: 28px;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  border-radius: 8px;
 }
 
 .product-grid article h3 {
-    font-size: 19px;
-    margin: 15px 0 8px;
+  margin-top: 15px;
+  font-size: 20px;
 }
 
 .product-grid article p {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.5;
+  margin: 8px 0;
+}
+
+.product-grid article p:nth-of-type(2) {
+  color: #007bff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 12px 0;
 }
 
 .product-grid article button {
-    margin-top: 8px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.product-grid article button:hover {
+  background-color: #0056b3;
+}
+
+.product-grid article p {
+  line-height: 1.5;
+}
+
+aside {
+  padding: 15px;
+  margin: 20px 0;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+aside li {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
+aside li:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+#search {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+#search + button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  margin: 20px 0;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #222;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+}
+
+footer a:hover {
+  color: #00aaff;
+}
+
+footer h2,
+footer h3 {
+  margin-bottom: 10px;
+}
+
+main > nav {
+  margin: 30px 0;
+  text-align: center;
+}
+
+main > nav a {
+  margin: 0 5px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+main > nav a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.product-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-grid article {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+header {
+  padding: 20px 40px;
+  background-color: #111827;
+  color: white;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  gap: 25px;
+}
+
+header nav a {
+  transition: color 0.2s;
+}
+
+header nav a.active {
+  color: #00aaff;
+  font-weight: bold;
+  border-bottom: 2px solid #00aaff;
+  padding-bottom: 5px;
+}
+
+.search-box {
+  display: flex;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.search-box form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-box input {
+  flex: 1;
+}
+
+aside {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+aside h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+section {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.product-grid article h3 {
+  font-size: 19px;
+  margin: 15px 0 8px;
+}
+
+.product-grid article p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.product-grid article button {
+  margin-top: 8px;
 }
 
 main {
-    background-color: #f8f9fa;
-    border-radius: 12px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
 }
 
 section:first-child p {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 25px;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 
 .search-box label {
-    font-weight: bold;
-    color: #333;
+  font-weight: bold;
+  color: #333;
+}
+
+.header {
+  padding: 200px;
+  text-align: left;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  background-image: url('des.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
